@@ -36,16 +36,16 @@
               <p class="mb-4">Jika belum punya akun harap registrasi terlebih dahulu, lalu login supaya bisa mengakses materi yang disediakan.</p>
             </div>
 
-            <form action="#" method="post">
+            <form action="index" method="">
 
               <div class="form-group first">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
+                <input type="text" class="form-control" id="username" required>
               </div>
 
               <div class="form-group last mb-4">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="password" required>
               </div>
 
               <div class="d-flex mb-5 align-items-center">
@@ -53,7 +53,7 @@
                   <input type="checkbox" checked="checked"/>
                   <div class="control__indicator"></div>
                 </label> --}}
-                <span class="ml-auto"><a href="#" class="forgot-pass">Belum Punya Akun</a></span>
+                <span class="ml-auto"><a href="register" class="forgot-pass">Belum Punya Akun</a></span>
               </div>
 
               <input type="submit" value="Log In" class="btn btn-block btn-info">

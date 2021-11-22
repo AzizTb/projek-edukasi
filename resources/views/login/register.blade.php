@@ -26,7 +26,24 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="{{asset('login/images/undraw_remotely_2j6y.svg')}}" alt="Image" class="img-fluid">
+            <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="{{asset('img/math.jpg')}}" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="{{asset('img/biologi.jpg')}}" alt="Image">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                </a>
+                <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                </a>
+            </div>
+        </div>
+        <!-- Carousel End -->
         </div>
         <div class="col-md-6 contents">
           <div class="row justify-content-center">
@@ -40,17 +57,17 @@
 
               <div class="form-group first">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
+                <input type="text" class="form-control" id="username" required>
               </div>
 
               <div class="form-group first">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email">
+                <input type="text" class="form-control" id="email" required>
               </div>
 
               <div class="form-group last mb-4">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="password" required>
               </div>
 
               <div class="d-flex mb-5 align-items-center">
@@ -58,7 +75,7 @@
                   <input type="checkbox" checked="checked"/>
                   <div class="control__indicator"></div>
                 </label> --}}
-                <span class="ml-auto"><a href="#" class="forgot-pass">Belum Punya Akun</a></span>
+                <span class="ml-auto"><a href="sign" class="forgot-pass">Sudah Punya Akun</a></span>
               </div>
 
               <input type="submit" value="Log In" class="btn btn-block btn-info">

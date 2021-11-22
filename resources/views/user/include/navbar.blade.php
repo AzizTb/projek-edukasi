@@ -23,10 +23,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.php" class="nav-item nav-link active">Beranda</a>
-                        <a href="pelayanan.php" class="nav-item nav-link">Matematika</a>
-                        <a href="harga.php" class="nav-item nav-link">Biologi</a>
-                        <a href="admin/dosen/create.php" class="nav-item nav-link">Tentang</a>
+                        <a href="index" class="nav-item nav-link">Beranda</a>
+                        <a href="mtk" class="nav-item nav-link">Matematika</a>
+                        <a href="bio" class="nav-item nav-link">Biologi</a>
+                        <a href="about" class="nav-item nav-link">Tentang</a>
                     </div>
                 </div>
             </nav>

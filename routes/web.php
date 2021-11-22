@@ -13,16 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.tampilan.index');
-})->name('index-user');
-
 
 Route::prefix('/')->group(function () {
+
+    Route::get('index', function () {
+        return view('user.tampilan.index');
+    })->name('index-user');
+
+    Route::get('mtk', function () {
+        return view('user.tampilan.mtk');
+    })->name('mtk-user');
+
+    Route::get('bio', function () {
+        return view('user.tampilan.bio');
+    })->name('bio-user');
+
+    Route::get('about', function () {
+        return view('user.tampilan.tentang');
+    })->name('about-user');
+
+});
+
+Route::prefix('/')->group(function () {
+
     Route::get('sign', function () {
         return view('login.masuk');
     })->name('sign');
+
     Route::get('register', function () {
         return view('login.register');
     })->name('register');
+
 });

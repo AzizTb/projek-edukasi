@@ -32,23 +32,9 @@
     @include('user.include.navbar')
     <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-    @yield('carousel')
-    <!-- Carousel End -->
-
-    <!-- Contact Info Start -->
-    @yield('kontakinfo')
-    <!-- Contact Info End -->
-
-    <!-- About Start -->
-    @yield('about')
-    <!-- About End -->
-
-
-    <!-- Services Start -->
-    @yield('servis')
-    <!-- Services End -->
-
+    {{-- content start --}}
+    @yield('content')
+    {{-- content end --}}
 
     <!-- Footer Start -->
     @include('user.include.footer')
