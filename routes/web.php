@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix('matlogi')->group(function () {
 
-Route::prefix('/')->group(function () {
-
+    //tampilan user
     Route::get('index', function () {
         return view('user.tampilan.index');
     })->name('index-user');
@@ -32,10 +32,8 @@ Route::prefix('/')->group(function () {
         return view('user.tampilan.tentang');
     })->name('about-user');
 
-});
 
-Route::prefix('/')->group(function () {
-
+    //tampilan login
     Route::get('sign', function () {
         return view('login.masuk');
     })->name('sign');
@@ -44,4 +42,47 @@ Route::prefix('/')->group(function () {
         return view('login.register');
     })->name('register');
 
+
+    //tampilan admin
+    Route::get('beranda', function () {
+        return view('admin.tampilan.dashboard');
+    })->name('index-admin');
+
+
+    //user
+    Route::get('listuser', function () {
+        return view('admin.tampilan.AkunLogin.index');
+    })->name('listuser');
+
+    Route::get('edituser', function () {
+        return view('admin.tampilan.AkunLogin.edit');
+    })->name('edituser');
+
+
+    //admin
+    Route::get('listadmin', function () {
+        return view('admin.tampilan.AkunAdmin.index');
+    })->name('listadmin');
+
+    Route::get('editadmin', function () {
+        return view('admin.tampilan.AkunAdmin.edit');
+    })->name('editadmin');
+
+    Route::get('tambahadmin', function () {
+        return view('admin.tampilan.AkunAdmin.create');
+    })->name('tambahadmin');
+
+
+    // materi
+    Route::get('listmateri', function () {
+        return view('admin.tampilan.Materi.index');
+    });
+
+    Route::get('buatmateri', function () {
+        return view('admin.tampilan.Materi.create');
+    });
+
+    Route::get('editmateri', function () {
+        return view('admin.tampilan.Materi.edit');
+    });
 });
